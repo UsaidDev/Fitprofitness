@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/aos.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
 
@@ -23,46 +23,46 @@
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-
+    
             <a class="navbar-brand" href="index.html">Fitpro Fitness</a>
-
+    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item">
                         <a href="#home" class="nav-link smoothScroll">Home</a>
                     </li>
-
+    
                     <li class="nav-item">
                         <a href="#about" class="nav-link smoothScroll">About Us</a>
                     </li>
-
+    
                     <li class="nav-item">
                         <a href="#class" class="nav-link smoothScroll">Classes</a>
                     </li>
-
+    
                     <li class="nav-item">
                         <a href="#schedule" class="nav-link smoothScroll">Schedules</a>
                     </li>
-
+    
                     <li class="nav-item">
                         <a href="#contact" class="nav-link smoothScroll">Contact</a>
                     </li>
                 </ul>
-
-                <ul class="social-icon ml-lg-3">
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="https://www.instagram.com/fitpromanjeri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            class="fa fa-instagram"></a></li>
-                </ul>
             </div>
-
+    
+            <!-- WhatsApp Icon Link for Small Devices -->
+            <a href="https://wa.me/919633778006" class="whatsapp-icon d-sm-block d-md-none" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+    
         </div>
     </nav>
+    
 
 
     <!-- HERO -->
@@ -86,7 +86,6 @@
 
                         <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up"
                             data-aos-delay="700">learn more</a>
-
                     </div>
                 </div>
 
@@ -510,7 +509,7 @@
                         <i class="fa fa-envelope-o mr-1"></i>
                         <a href="#">Shameerfitpro@gmail.com</a>
                     </p>
-                    <p><i class="fa fa-phone mr-1"></i> +91 96337 78006</p>
+                    <p><i class="fa fa-phone mr-1"></i><a href="tel:+919633778006">+91 96337 78006</a></p>
                 </div>
             </div>
         </div>
@@ -535,23 +534,10 @@
                     <form class="membership-form webform" role="form">
                         <input type="text" class="form-control" name="cf-name" placeholder="Name">
 
-                        <input type="email" class="form-control" name="cf-email" placeholder="Email">
-
-                        <input type="tel" class="form-control" name="cf-phone" placeholder="Date of Birth"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-                        <textarea class="form-control" rows="3" name="cf-message"
-                            placeholder="Additional Message"></textarea>
+                        <input type="tel" class="form-control" name="cf-phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
 
                         <button type="submit" class="form-control" id="submit-button" name="submit">Submit
                             Button</button>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="signup-agree">
-                            <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the
-                                <a href="#">Terms &amp;Conditions</a>
-                            </label>
-                        </div>
                     </form>
                 </div>
 
