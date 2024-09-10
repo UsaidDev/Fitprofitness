@@ -530,7 +530,7 @@ a:focus {
   left: 10px;
   bottom: 20px;
   z-index: 999;
-  font-size: 40px; /* Adjust the icon size as needed */
+  font-size: 50px; /* Adjust the icon size as needed */
   color: #25D366; /* WhatsApp green */
   background-color: transparent; /* Remove the background color */
   border-radius: 50%; /* Optional: Keep rounded shape */
