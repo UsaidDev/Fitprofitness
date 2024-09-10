@@ -59,12 +59,9 @@
             <a href="https://wa.me/919633778006" class="whatsapp-icon d-sm-block d-md-none" target="_blank">
                 <i class="fab fa-whatsapp"></i>
             </a>
-    
         </div>
     </nav>
     
-
-
     <!-- HERO -->
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
@@ -531,13 +528,12 @@
                 </div>
 
                 <div class="modal-body">
-                    <form class="membership-form webform" role="form">
-                        <input type="text" class="form-control" name="cf-name" placeholder="Name">
-
-                        <input type="tel" class="form-control" name="cf-phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
-
-                        <button type="submit" class="form-control" id="submit-button" name="submit">Submit
-                            Button</button>
+                    <form class="membership-form webform" id="whatsapp-form" role="form">
+                        <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Name" required>
+                
+                        <input type="tel" class="form-control" name="cf-phone" id="cf-phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                
+                        <button type="submit" class="form-control" id="submit-button" name="submit">Submit Button</button>
                     </form>
                 </div>
 
@@ -553,6 +549,21 @@
     <script src="js/aos.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+        
+            // Get form values
+            const name = encodeURIComponent(document.getElementById('cf-name').value);
+            const phone = encodeURIComponent(document.getElementById('cf-phone').value);
+        
+            // WhatsApp API URL with message
+            const whatsappUrl = `https://wa.me/919633778006?text=Name: ${name}%0APhone Number: ${phone}`;
+        
+            // Open WhatsApp with pre-filled message
+            window.open(whatsappUrl, '_blank');
+        });
+        </script>
 
 </body>
 </html>
